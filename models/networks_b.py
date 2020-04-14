@@ -11,7 +11,7 @@ import torch.nn.functional as F
 import torch.utils.model_zoo as model_zoo
 from collections import OrderedDict
 
-#四种VGG模型
+
 cfg = {
     'VGG11': [64, 'M', 128, 'M', 256, 256, 'M', 512, 512, 'M', 512, 512, 'M'],
     'VGG13': [64, 64, 'M', 128, 128, 'M', 256, 256, 'M', 512, 512, 'M', 512, 512, 'M'],
@@ -35,13 +35,12 @@ class VGG(nn.Module):
 
 # 模型计算时的前向过程，也就是按照这个过程进行计算
     def forward(self, x):
-        out = self.input(x).view(-1, 1, 1024)  #数据改型为n*1*1024
+        out = self.input(x).view(-1, 1, 1024)
         out = self.features(out)
-        out = out.view(out.size(0), -1)        #扁平化为一维传给下一个输出层
+        out = out.view(out.size(0), -1)
         out = self.classifier(out)
         return out
 
-#构建模型
     def _make_layers(self, cfg):
         layers = []
         in_channels = 1
@@ -66,7 +65,7 @@ class VGG2d(nn.Module):
 
 # 模型计算时的前向过程，也就是按照这个过程进行计算
     def forward(self, x):
-        out = self.features(x)           #x是训练的数据
+        out = self.features(x)
         out = out.view(out.size(0), -1)
         out = self.classifier(out)
         return out
@@ -108,7 +107,7 @@ class MyCNN(nn.Module):
 
     def _make_layers(self):
         layers = []
-        layers += [nn.Conv1d(1, 64, kernel_size=3, padding=1,dilation=2),     #dilation膨胀系数
+        layers += [nn.Conv1d(1, 64, kernel_size=3, padding=1,dilation=2),
             nn.BatchNorm1d(64),
             nn.ReLU(inplace=True)]
         layers += [nn.Conv1d(64, 64, kernel_size=3, padding=1,dilation=2),
@@ -183,13 +182,13 @@ model_urls = {
 
 def conv3x3(in_planes, out_planes, stride=1):
     """3x3 convolution with padding"""
-    return nn.Conv1d(in_planes, out_planes, kernel_size=3, stride=stride,
+    return nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=stride,
                      padding=1, bias=False)
 
 
 def conv1x1(in_planes, out_planes, stride=1):
     """1x1 convolution"""
-    return nn.Conv1d(in_planes, out_planes, kernel_size=1, stride=stride, bias=False)
+    return nn.Conv2d(in_planes, out_planes, kernel_size=1, stride=stride, bias=False)
 
 
 class BasicBlock(nn.Module):
@@ -198,10 +197,10 @@ class BasicBlock(nn.Module):
     def __init__(self, inplanes, planes, stride=1, downsample=None):
         super(BasicBlock, self).__init__()
         self.conv1 = conv3x3(inplanes, planes, stride)
-        self.bn1 = nn.BatchNorm1d(planes)
+        self.bn1 = nn.BatchNorm2d(planes)
         self.relu = nn.ReLU(inplace=True)
         self.conv2 = conv3x3(planes, planes)
-        self.bn2 = nn.BatchNorm1d(planes)
+        self.bn2 = nn.BatchNorm2d(planes)
         self.downsample = downsample
         self.stride = stride
 
@@ -230,11 +229,11 @@ class Bottleneck(nn.Module):
     def __init__(self, inplanes, planes, stride=1, downsample=None):
         super(Bottleneck, self).__init__()
         self.conv1 = conv1x1(inplanes, planes)
-        self.bn1 = nn.BatchNorm1d(planes)
+        self.bn1 = nn.BatchNorm2d(planes)
         self.conv2 = conv3x3(planes, planes, stride)
-        self.bn2 = nn.BatchNorm1d(planes)
+        self.bn2 = nn.BatchNorm2d(planes)
         self.conv3 = conv1x1(planes, planes * self.expansion)
-        self.bn3 = nn.BatchNorm1d(planes * self.expansion)
+        self.bn3 = nn.BatchNorm2d(planes * self.expansion)
         self.relu = nn.ReLU(inplace=True)
         self.downsample = downsample
         self.stride = stride
@@ -267,22 +266,22 @@ class ResNet(nn.Module):
     def __init__(self, block, layers, num_classes=5, zero_init_residual=False):
         super(ResNet, self).__init__()
         self.inplanes = 64
-        self.conv1 = nn.Conv1d(1, 64, kernel_size=7, stride=2, padding=3,
+        self.conv1 = nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3,
                                bias=False)
-        self.bn1 = nn.BatchNorm1d(64)
+        self.bn1 = nn.BatchNorm2d(64)
         self.relu = nn.ReLU(inplace=True)
-        self.maxpool = nn.MaxPool1d(kernel_size=3, stride=2, padding=1)
+        self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
         self.layer1 = self._make_layer(block, 64, layers[0])
         self.layer2 = self._make_layer(block, 128, layers[1], stride=2)
         self.layer3 = self._make_layer(block, 256, layers[2], stride=2)
         self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
-        self.avgpool = nn.AvgPool1d(kernel_size=1, stride=1)
-        self.fc = nn.Linear(80384, num_classes)
+        self.avgpool = nn.AvgPool2d(kernel_size=1, stride=1)
+        self.fc = nn.Linear(4096, num_classes)
 
         for m in self.modules():
-            if isinstance(m, nn.Conv1d):
+            if isinstance(m, nn.Conv2d):
                 nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
-            elif isinstance(m, nn.BatchNorm1d):
+            elif isinstance(m, nn.BatchNorm2d):
                 nn.init.constant_(m.weight, 1)
                 nn.init.constant_(m.bias, 0)
 
@@ -301,7 +300,7 @@ class ResNet(nn.Module):
         if stride != 1 or self.inplanes != planes * block.expansion:
             downsample = nn.Sequential(
                 conv1x1(self.inplanes, planes * block.expansion, stride),
-                nn.BatchNorm1d(planes * block.expansion),
+                nn.BatchNorm2d(planes * block.expansion),
             )
 
         layers = []
@@ -313,7 +312,7 @@ class ResNet(nn.Module):
         return nn.Sequential(*layers)
 
     def forward(self, x):
-        x = x.view(-1, 1, 5000)
+        # x = x.view(-1, 1, 5000)
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.relu(x)
@@ -371,7 +370,7 @@ class MyCNN_2d(nn.Module):
 
         return nn.Sequential(*layers)
 
-""" pca + cnn """
+""" tsne + cnn """
 
 
 class MyCNN_pca(nn.Module):
@@ -499,38 +498,3 @@ class DenseNet(nn.Module):
 def densenet121(**kwargs):
     model = DenseNet(num_init_features=64, growth_rate=32, block_config=(6, 12, 24, 16), **kwargs)
     return model
-
-
-"""simple cnn fast path"""
-
-
-class MyCNN_fastpath_1d(nn.Module):
-    def __init__(self):
-        super(MyCNN_fastpath_1d, self).__init__()
-        self.input = nn.Linear(5000, 1024)
-        self.conv1 = self._make_layers(1)
-        self.conv2 = self._make_layers(2)
-        self.output = nn.Linear(131072, 5)
-        # self.dropout = nn.Dropout(p=0.5)
-
-    def forward(self, x):
-        out = self.input(x).view(-1, 1, 1024)
-        out_conv1 = self.conv1(out)
-        out_conv2 = self.conv2(out_conv1)
-        out = torch.cat([out_conv1, out_conv2],1).view(out.size(0), -1)
-        # out = self.dropout(out)
-        out = self.output(out)
-
-        return out
-
-    def _make_layers(self, layer):
-        if layer==1:
-            layers = [nn.Conv1d(1, 64, kernel_size=3, padding=2,dilation=2),
-                nn.BatchNorm1d(64),
-                nn.ReLU(inplace=True)]
-        else:
-            layers = [nn.Conv1d(64, 64, kernel_size=3, padding=2,dilation=2),
-                       nn.BatchNorm1d(64),
-                       nn.ReLU(inplace=True)]
-
-        return nn.Sequential(*layers)

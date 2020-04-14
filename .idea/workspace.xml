@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11f8127e-2c5e-4df5-9764-bf9f6d9538e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/models/networks_b.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plot_img/create_imgs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SpectralClassification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SpectralClassification.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/setting.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/setting.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prepare.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_prepare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/mycnn 10-15/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/mycnn 5-10/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/mycnn up15/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/mydnn 10-15/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/mydnn up15/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/res18 5-10/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/vgg16 10-15/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/vgg16 5-10/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/vgg16 up15/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/networks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,99 +32,46 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/SpectralClassification$data_prepare.coverage" NAME="data_prepare Coverage Results" MODIFIED="1549015490701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SpectralClassification$networks.coverage" NAME="networks Coverage Results" MODIFIED="1548991159384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/SpectralClassification$utils.coverage" NAME="utils Coverage Results" MODIFIED="1550022592178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SpectralClassification$networks.coverage" NAME="networks Coverage Results" MODIFIED="1552571561546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/SpectralClassification$utils.coverage" NAME="utils Coverage Results" MODIFIED="1552357481459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SpectralClassification$test.coverage" NAME="test Coverage Results" MODIFIED="1548995753638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SpectralClassification$train.coverage" NAME="train Coverage Results" MODIFIED="1550023088368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SpectralClassification$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1551363498285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SpectralClassification$create_imgs.coverage" NAME="create_imgs Coverage Results" MODIFIED="1552568357261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plot_img" />
+    <SUITE FILE_PATH="coverage/SpectralClassification$train.coverage" NAME="train Coverage Results" MODIFIED="1552572048442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train.py">
+        <entry file="file://$PROJECT_DIR$/data_prepare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+            <state relative-caret-position="351">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding>
-                <element signature="e#161#198#0" expanded="true" />
+                <element signature="e#133#161#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/conf/setting.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/tensor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9702">
-              <caret line="449" selection-start-line="449" selection-end-line="449" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/numpy/core/fromnumeric.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23958">
-              <caret line="1102" selection-start-line="1102" selection-end-line="1102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_prepare.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/utils/data/dataloader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16522">
-              <caret line="767" column="30" selection-start-line="767" selection-start-column="23" selection-end-line="767" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-              <folding>
-                <element signature="e#349#358#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="24" selection-start-column="24" selection-end-column="24" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/networks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            <state relative-caret-position="242">
+              <caret line="530" column="13" lean-forward="true" selection-end-line="535" selection-end-column="37" />
               <folding>
                 <element signature="e#130#142#0" expanded="true" />
               </folding>
@@ -113,10 +80,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/modules/conv.py">
+        <entry file="file://$PROJECT_DIR$/models/networks_b.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3652">
-              <caret line="173" column="8" selection-start-line="173" selection-start-column="8" selection-end-line="173" selection-end-column="8" />
+            <state relative-caret-position="5950">
+              <caret line="500" selection-start-line="500" selection-end-line="500" />
+              <folding>
+                <element signature="e#130#142#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/setting.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="22" />
+              <folding>
+                <element signature="e#126#135#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,22 +132,42 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>trainset</find>
-      <find>classes</find>
-      <find>trainloader</find>
-      <find>start_epoch</find>
-      <find>term_width</find>
-      <find>progress_bar</find>
-      <find>enumerate</find>
-      <find>2d</find>
+      <find>cudnn</find>
+      <find>test correct:0.9279</find>
+      <find>test correct:0.9024</find>
+      <find>test correct:0.923</find>
+      <find>5_10</find>
+      <find>test correct:0.927</find>
+      <find>15</find>
+      <find>test correct:0.924</find>
+      <find>test correct:0.92</find>
+      <find>correct:0.905</find>
+      <find>correct:0.907</find>
+      <find>correct:0.903</find>
+      <find>correct:0.900</find>
+      <find>correct:0.89</find>
+      <find>correct:0.88</find>
+      <find>correct:0.87</find>
+      <find>correct:0.867</find>
+      <find>correct:0.86</find>
+      <find>correct:0.9076</find>
+      <find>correct:0.959</find>
+      <find>correct:0.98</find>
+      <find>correct:0.982</find>
+      <find>correct:0.95</find>
+      <find>correct:0.935</find>
+      <find>correct:0.97</find>
+      <find>correct:0.976</find>
+      <find>correct:0.985</find>
+      <find>0.9900</find>
+      <find>0.9783</find>
       <find>dataPrepare</find>
-      <find>spectraldata</find>
-      <find>lr</find>
-      <find>128</find>
-      <find>test_correct_list</find>
     </findStrings>
     <replaceStrings>
       <replace>test_acc_list</replace>
+      <replace>10_15</replace>
+      <replace>15</replace>
+      <replace>5_10</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -156,21 +176,37 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/data_prepare.py" />
-        <option value="$PROJECT_DIR$/models/networks.py" />
         <option value="$PROJECT_DIR$/conf/vgg16.json" />
-        <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/experiment/vgg16 10-15/result.txt" />
+        <option value="$PROJECT_DIR$/experiment/mydnn up15/result.txt" />
+        <option value="$PROJECT_DIR$/experiment/vgg16 5-10/result.txt" />
+        <option value="$PROJECT_DIR$/experiment/1550064300.6181586/result.txt" />
+        <option value="$PROJECT_DIR$/experiment/1550110764.0942051/result.txt" />
+        <option value="$PROJECT_DIR$/experiment/mycnn up15/result.txt" />
+        <option value="$PROJECT_DIR$/experiment/vgg16 up15_1/result.txt" />
+        <option value="$PROJECT_DIR$/experiment/1550122621.8429458/result.txt" />
+        <option value="$PROJECT_DIR$/experiment/mycnn up15 no bn/result.txt" />
+        <option value="$PROJECT_DIR$/experiment/mycnn 10-15 no bn/result.txt" />
+        <option value="$PROJECT_DIR$/experiment/mycnn 5-10/result.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/conf/setting.json" />
+        <option value="$PROJECT_DIR$/experiment/mydnn 10-15/result.txt" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/models/networks_b.py" />
+        <option value="$PROJECT_DIR$/plot_img/create_imgs.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/models/networks.py" />
+        <option value="$PROJECT_DIR$/data_prepare.py" />
+        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/f'f'f.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="37" />
+    <option name="y" value="42" />
+    <option name="width" value="807" />
+    <option name="height" value="600" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -183,27 +219,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="SpectralClassification" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpectralClassification" type="462c0819:PsiDirectoryNode" />
+              <item name="18SpectralClassification光谱分类" type="b2602c69:ProjectViewProjectNode" />
+              <item name="18SpectralClassification光谱分类" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SpectralClassification" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpectralClassification" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpectralClassification" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpectralClassification" type="462c0819:PsiDirectoryNode" />
-              <item name="dataset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpectralClassification" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpectralClassification" type="462c0819:PsiDirectoryNode" />
-              <item name="experiment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpectralClassification" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpectralClassification" type="462c0819:PsiDirectoryNode" />
+              <item name="18SpectralClassification光谱分类" type="b2602c69:ProjectViewProjectNode" />
+              <item name="18SpectralClassification光谱分类" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -217,7 +238,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PythonProject\SpectralClassification\models" />
+      <recent name="F:\PythonProject\SpectralClassification\img" />
+      <recent name="F:\PythonProject\SpectralClassification\dataset" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -231,8 +259,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train">
-    <configuration name="data_prepare" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.f'f'f">
+    <configuration name="create_imgs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SpectralClassification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plot_img" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_img/create_imgs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="f'f'f" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SpectralClassification" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,8 +294,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_prepare.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/f'f'f.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -276,7 +325,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SpectralClassification" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,7 +338,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="F:\PythonProject\SpectralClassification\data_prepare.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -305,9 +354,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\Pycharm\MyPython\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -320,35 +369,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SpectralClassification" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.f'f'f" />
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.train" />
-        <item itemvalue="Python.utils" />
-        <item itemvalue="Python.data_prepare" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.networks" />
+        <item itemvalue="Python.create_imgs" />
       </list>
     </recent_temporary>
   </component>
@@ -372,23 +399,63 @@
       <workItem from="1549674411904" duration="9350000" />
       <workItem from="1549970920194" duration="3366000" />
       <workItem from="1549981946332" duration="900000" />
-      <workItem from="1550021374489" duration="2005000" />
+      <workItem from="1550021374489" duration="33939000" />
+      <workItem from="1551251620185" duration="2374000" />
+      <workItem from="1551338614675" duration="9025000" />
+      <workItem from="1551751453516" duration="1142000" />
+      <workItem from="1551776044385" duration="14806000" />
+      <workItem from="1551834562991" duration="13347000" />
+      <workItem from="1551939203845" duration="7805000" />
+      <workItem from="1552012235092" duration="3283000" />
+      <workItem from="1552046429936" duration="3159000" />
+      <workItem from="1552070114196" duration="1240000" />
+      <workItem from="1552109055826" duration="1725000" />
+      <workItem from="1552133281763" duration="3445000" />
+      <workItem from="1552187331576" duration="184000" />
+      <workItem from="1552282245370" duration="8127000" />
+      <workItem from="1552356621596" duration="6252000" />
+      <workItem from="1552488641589" duration="464000" />
+      <workItem from="1552529241014" duration="14036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33123000" />
+    <option name="totallyTimeSpent" value="155471000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2771855" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49848023" visible="true" weight="0.19221604" />
+      <window_info id="Structure" order="1" sideWeight="0.50151974" side_tool="true" weight="0.2771855" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3167028" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28633407" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17811158" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46529284" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.18076286" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286219" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.122068234" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49848023" visible="true" weight="0.28997868" />
+      <window_info id="Structure" order="1" sideWeight="0.50151974" side_tool="true" weight="0.2771855" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20065077" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45878524" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -401,9 +468,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.51759064" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.17910448" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -412,156 +479,142 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/train.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/models/networks_b.py</url>
+          <line>315</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/train.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/functional.py</url>
+          <line>2231</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torchvision/datasets/__init__.py">
+    <entry file="file://$PROJECT_DIR$/experiment/mydnn up15/result.png" />
+    <entry file="file://$PROJECT_DIR$/experiment/mydnn 10-15/result.png" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/modules/pooling.py" />
+    <entry file="file://$PROJECT_DIR$/experiment/vgg16 up15/result.png" />
+    <entry file="file://$PROJECT_DIR$/experiment/res18 5-10/result.png" />
+    <entry file="file://$PROJECT_DIR$/experiment/res18 5-10/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/mycnn 5-10/400.pth" />
+    <entry file="file://$PROJECT_DIR$/experiment/vgg16 5-10/result.png" />
+    <entry file="file://$PROJECT_DIR$/experiment/mydnn 5-10/5.pth" />
+    <entry file="file://$PROJECT_DIR$/experiment/mydnn 5-10/result.png" />
+    <entry file="file://$PROJECT_DIR$/experiment/mycnn 5-10 no bn/result.png" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/modules/loss.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/numpy/core/numeric.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/sklearn/manifold/t_sne.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/sklearn/utils/validation.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/sklearn/decomposition/pca.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/modules/linear.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/utils/data/dataset.py" />
+    <entry file="file://$PROJECT_DIR$/experiment/mycnn up15 no bn/result.png" />
+    <entry file="file://$PROJECT_DIR$/experiment/pca+cnn 5-10 no bn/result.png" />
+    <entry file="file://$PROJECT_DIR$/experiment/pca+cnn 15 no bn/result.png" />
+    <entry file="file://$PROJECT_DIR$/experiment/mycnn 5-10/result.png" />
+    <entry file="file://$PROJECT_DIR$/experiment/mydnn 5-10/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/mydnn 10-15/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/mydnn up15/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/mycnn 5-10/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/mycnn up15/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/mycnn 5-10 no bn/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/mycnn 10-15/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/mycnn 10-15 no bn/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/mycnn up15 no bn/result.txt" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/scipy/io/matlab/mio.py" />
+    <entry file="file://$PROJECT_DIR$/experiment/vgg16 5-10/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/vgg16 10-15/result.txt" />
+    <entry file="file://$PROJECT_DIR$/experiment/vgg16 up15/result.txt" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/modules/batchnorm.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/modules/module.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/matplotlib/pyplot.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/matplotlib/figure.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/modules/conv.py" />
+    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/functional.py" />
+    <entry file="file://$PROJECT_DIR$/plot_img/create_imgs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="762">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#133#164#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/utils/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/utils/data/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/multiprocessing/spawn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2794">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12386">
-          <caret line="570" selection-start-line="570" selection-end-line="570" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/parallel/data_parallel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2486">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6446">
-          <caret line="295" selection-start-line="295" selection-end-line="295" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/serialization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2794">
-          <caret line="140" selection-start-line="140" selection-end-line="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/tensor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9702">
-          <caret line="449" selection-start-line="449" selection-end-line="449" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23958">
-          <caret line="1102" selection-start-line="1102" selection-end-line="1102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_prepare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/utils/data/dataloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16522">
-          <caret line="767" column="30" selection-start-line="767" selection-start-column="23" selection-end-line="767" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/networks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-          <folding>
-            <element signature="e#130#142#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DLenv/Lib/site-packages/torch/nn/modules/conv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3652">
-          <caret line="173" column="8" selection-start-line="173" selection-start-column="8" selection-end-line="173" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="24" selection-start-column="24" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="-662">
+          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
           <folding>
             <element signature="e#349#358#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
+    <entry file="file://$PROJECT_DIR$/f'f'f.py" />
+    <entry file="file://$PROJECT_DIR$/data_prepare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+        <state relative-caret-position="351">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
           <folding>
-            <element signature="e#161#198#0" expanded="true" />
+            <element signature="e#133#161#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/setting.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="243">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#126#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1053">
+            <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/networks_b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5950">
+          <caret line="500" selection-start-line="500" selection-end-line="500" />
+          <folding>
+            <element signature="e#130#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/networks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="530" column="13" lean-forward="true" selection-end-line="535" selection-end-column="37" />
+          <folding>
+            <element signature="e#130#142#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

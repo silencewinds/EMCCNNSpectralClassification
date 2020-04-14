@@ -48,7 +48,8 @@ parser.add_argument('--resume', '-r', action='store_true', help='resume from che
 args = parser.parse_args()
 
 use_cuda = torch.cuda.is_available()
-best_acc = 0  # best test accuracy
+
+best_acc = 0     # best test accuracy
 start_epoch = 0  # start from epoch 0 or last checkpoint epoch
 
 
@@ -56,7 +57,7 @@ start_epoch = 0  # start from epoch 0 or last checkpoint epoch
 
 def train(epoch, time):
     # switch to train mode
-    net.train()
+    net.train()                  #进入到训练模式
     train_loss = 0
     correct = 0
     total = 0
@@ -95,7 +96,7 @@ def train(epoch, time):
 
     correct_epoch /= batchs
     train_loss /= batchs
-    print('epoch:'+str(epoch)+' '+'correct:'+str(correct_epoch))
+    print('epoch:'+str(epoch)+' '+'correct:'+str(correct_epoch)+" loss:"+str(train_loss))
     train_acc_list.append(correct_epoch)
     loss_list.append(train_loss)
     if epoch % args.tf == 0:
@@ -126,8 +127,7 @@ def train(epoch, time):
 
 if __name__ == '__main__':
     spectraldata = SpectralData()
-    train_dataset, test_dataset = spectraldata.dataPrepare()  # prepare data
-
+    train_dataset, test_dataset = spectraldata.dataPrepare_1d()
     trainloader = Data.DataLoader(dataset=train_dataset,
                                   batch_size=args.batchsize,
                                   shuffle=True,
@@ -137,11 +137,13 @@ if __name__ == '__main__':
                                  shuffle=True,
                                  num_workers=1)
     print('==> Building model..')
-    net = VGG('VGG16')
+    # net = VGG('VGG16')
      # print(net)
-    # net = resnet18()
+    # net = VGG2d('VGG16')
+    # print(net)
     # net = MyDNN()
-    # net = MyCNN()
+    # net = densenet121()
+    net = MyCNN_fastpath_1d()
     print(args.name)
 
     # 如果GPU可用，使用GPU
@@ -155,7 +157,8 @@ if __name__ == '__main__':
 
     # 定义度量和优化
     criterion = nn.MultiLabelSoftMarginLoss()
-    optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
+    #optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
+    optimizer = optim.Adam(net.parameters(), lr=args.lr, weight_decay=5e-4)
 
     time = str(time.time())
     print("experiment/{0}".format(time))

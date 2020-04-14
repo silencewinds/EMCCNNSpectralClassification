@@ -14,6 +14,12 @@ results, on the contrary, some simple networks can get unexpected surprises.
 3.Compared with the simple network, the sensitivity of the structure to SNR is lower, and the amount of information 
 extracted by the network is negatively correlated with the sensitivity.
 
+4.One-dimensional spectral data were folded in two dimensions and classified by CNN network. As one of the components 
+of the later model fusion.
+
+5.We use PCA algorithm to reduce the dimension of the spectrum to reduce the spectral useless features.
+ The data after dimension reduction were classified by CNN.
+
 If you have some ideas, please contact me 812116298@qq.com. 
 
 ##Dataset
